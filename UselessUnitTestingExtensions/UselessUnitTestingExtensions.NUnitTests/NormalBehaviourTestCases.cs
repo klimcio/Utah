@@ -2,7 +2,7 @@ using NUnit.Framework;
 
 namespace UselessUnitTestingExtensions.NUnitTests
 {
-    public class BugfixTestCases
+    public class NormalBehaviourTestCases
     {
         [SetUp]
         public void Setup()
@@ -10,14 +10,14 @@ namespace UselessUnitTestingExtensions.NUnitTests
         }
 
         [Test]
-        [Bugfix]
+        [NormalBehaviour]
         public void Test1()
         {
             Assert.Pass();
         }
 
         [Test]
-        [Bugfix("JIRA-011")]
+        [NormalBehaviour("JIRA-011")]
         public void Test2()
         {
             Assert.Pass();
